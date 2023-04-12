@@ -10,3 +10,15 @@ C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisLib\obj\Release\net6.0\
 C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisLib\obj\Release\net6.0\refint\TetrisLib.dll
 C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisLib\obj\Release\net6.0\TetrisLib.pdb
 C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisLib\obj\Release\net6.0\ref\TetrisLib.dll
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\bin\Release\net6.0\TetrisLib.deps.json
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\bin\Release\net6.0\TetrisLib.dll
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\bin\Release\net6.0\TetrisLib.pdb
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.csproj.AssemblyReference.cache
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.AssemblyInfoInputs.cache
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.AssemblyInfo.cs
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.csproj.CoreCompileInputs.cache
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.dll
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\refint\TetrisLib.dll
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.pdb
+C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\ref\TetrisLib.dll

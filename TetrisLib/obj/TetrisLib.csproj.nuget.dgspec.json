@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj": {}
+    "C:\\Users\\ethan.enger\\code\\PassionProjects\\TetrisLib\\TetrisLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj": {
+    "C:\\Users\\ethan.enger\\code\\PassionProjects\\TetrisLib\\TetrisLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj",
+        "projectUniqueName": "C:\\Users\\ethan.enger\\code\\PassionProjects\\TetrisLib\\TetrisLib.csproj",
         "projectName": "TetrisLib",
-        "projectPath": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj",
-        "packagesPath": "C:\\Users\\Ethan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\obj\\",
+        "projectPath": "C:\\Users\\ethan.enger\\code\\PassionProjects\\TetrisLib\\TetrisLib.csproj",
+        "packagesPath": "C:\\Users\\ethan.enger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ethan.enger\\code\\PassionProjects\\TetrisLib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ethan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ethan.enger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
