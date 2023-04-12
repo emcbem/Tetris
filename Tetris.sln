@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tetris", "Tetris\Tetris.csproj", "{AA0D8469-B2F9-4AC7-8886-AFD047175D07}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisLib", "TetrisLib\TetrisLib.csproj", "{B4940F3C-B9D8-437A-B063-C40BF138A914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisCroPlat", "TetrisCroPlat\TetrisCroPlat.csproj", "{304C5C63-50C6-4E96-84B8-33AE4EDDB50D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisCross", "TetrisCross\TetrisCross.csproj", "{FFE12DC8-5327-4573-96AC-817107BCDA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA0D8469-B2F9-4AC7-8886-AFD047175D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA0D8469-B2F9-4AC7-8886-AFD047175D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA0D8469-B2F9-4AC7-8886-AFD047175D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA0D8469-B2F9-4AC7-8886-AFD047175D07}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4940F3C-B9D8-437A-B063-C40BF138A914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4940F3C-B9D8-437A-B063-C40BF138A914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4940F3C-B9D8-437A-B063-C40BF138A914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4940F3C-B9D8-437A-B063-C40BF138A914}.Release|Any CPU.Build.0 = Release|Any CPU
-		{304C5C63-50C6-4E96-84B8-33AE4EDDB50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{304C5C63-50C6-4E96-84B8-33AE4EDDB50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{304C5C63-50C6-4E96-84B8-33AE4EDDB50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{304C5C63-50C6-4E96-84B8-33AE4EDDB50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE12DC8-5327-4573-96AC-817107BCDA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE12DC8-5327-4573-96AC-817107BCDA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE12DC8-5327-4573-96AC-817107BCDA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE12DC8-5327-4573-96AC-817107BCDA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

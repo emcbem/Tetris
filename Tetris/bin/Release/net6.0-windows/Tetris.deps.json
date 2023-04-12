@@ -10,7 +10,8 @@
         "dependencies": {
           "MonoGame.Content.Builder.Task": "3.8.1.303",
           "MonoGame.Framework.WindowsDX": "3.8.1.303",
-          "TetrisLib": "1.0.0"
+          "TetrisLib": "1.0.0",
+          "TetrisLib.Reference": "1.0.0.0"
         },
         "runtime": {
           "Tetris.dll": {}
@@ -1476,9 +1477,12 @@
           "System.Xml.XPath": "4.0.1"
         }
       },
-      "TetrisLib/1.0.0": {
+      "TetrisLib.Reference/1.0.0.0": {
         "runtime": {
-          "TetrisLib.dll": {}
+          "TetrisLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -2336,8 +2340,8 @@
       "path": "system.xml.xpath.xdocument/4.0.1",
       "hashPath": "system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
     },
-    "TetrisLib/1.0.0": {
-      "type": "project",
+    "TetrisLib.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
