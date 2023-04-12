@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aPRw2Ao4Rlfcf9BJu0mo5Amljl3CnCs4lNUnD7Hj38DzCH9wT0JEVUsCEBdYQJkrCnFsCqeITZbEBPAfbD5Etw==",
+  "dgSpecHash": "atNX558CcRP5Dlm3vxZj6ltmM0QvRFJayyCzf1wgnpOTCsRJIkQe9x7KHdHLqDL1empCdXN538HQcMVqwjq94A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj",
+  "projectFilePath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ethan\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "/Users/ethanenger/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }

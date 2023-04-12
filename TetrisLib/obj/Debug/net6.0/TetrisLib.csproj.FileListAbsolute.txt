@@ -1,0 +1,12 @@
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/bin/Debug/net6.0/TetrisLib.deps.json
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/bin/Debug/net6.0/TetrisLib.dll
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/bin/Debug/net6.0/TetrisLib.pdb
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.csproj.AssemblyReference.cache
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.AssemblyInfoInputs.cache
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.AssemblyInfo.cs
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.csproj.CoreCompileInputs.cache
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.dll
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/refint/TetrisLib.dll
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/TetrisLib.pdb
+/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/Debug/net6.0/ref/TetrisLib.dll

@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj": {}
+    "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj": {
+    "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj",
+        "projectUniqueName": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj",
         "projectName": "TetrisLib",
-        "projectPath": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\TetrisLib.csproj",
-        "packagesPath": "C:\\Users\\Ethan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisLib\\obj\\",
+        "projectPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj",
+        "packagesPath": "/Users/ethanenger/.nuget/packages/",
+        "outputPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ethan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ethanenger/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

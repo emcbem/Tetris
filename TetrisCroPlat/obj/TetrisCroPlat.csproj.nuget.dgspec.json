@@ -1,0 +1,137 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ethanenger/code/PassionProjects/Tetris/TetrisCroPlat/TetrisCroPlat.csproj": {}
+  },
+  "projects": {
+    "/Users/ethanenger/code/PassionProjects/Tetris/TetrisCroPlat/TetrisCroPlat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisCroPlat/TetrisCroPlat.csproj",
+        "projectName": "TetrisCroPlat",
+        "projectPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisCroPlat/TetrisCroPlat.csproj",
+        "packagesPath": "/Users/ethanenger/.nuget/packages/",
+        "outputPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisCroPlat/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ethanenger/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj": {
+                "projectPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MonoGame.Content.Builder.Task": {
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            },
+            "MonoGame.Framework.DesktopGL": {
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj",
+        "projectName": "TetrisLib",
+        "projectPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/TetrisLib.csproj",
+        "packagesPath": "/Users/ethanenger/.nuget/packages/",
+        "outputPath": "/Users/ethanenger/code/PassionProjects/Tetris/TetrisLib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ethanenger/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MonoGame.Framework.DesktopGL": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

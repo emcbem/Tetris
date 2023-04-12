@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{304C5C63-50C6-4E96-84B8-33AE4EDDB50D}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tetris/Game1.cs">
+    <Files>
+      <File FileName="Tetris/Program.cs" Line="1" Column="1" />
+      <File FileName="Tetris/Game1.cs" Line="10" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Tetris" expanded="True">
+            <Node name="Tetris" expanded="True">
+              <Node name="Game1.cs" selected="True" />
+            </Node>
+            <Node name="TetrisLib" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TetrisCroPlat PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+</Properties>
