@@ -13,11 +13,21 @@ namespace TetrisTests.StepDefinitions
             _scenarioContext = scenarioContext;
         }
 
-        [Given(@"there is a T tetromino")]
-        public void GivenThereIsATTetromino()
+        [Given(@"there is a '([^']*)' tetromino")]
+        public void GivenThereIsATetromino(string shape)
         {
-            _scenarioContext.Add("tetroid", new T());
+            ITetroid tetroid = null;
+            if(shape == "T")
+            {
+                tetroid = new T();
+            }
+            else if(shape == "I")
+            {
+                tetroid = new I();
+            }
+            _scenarioContext.Add("tetroid", tetroid);
         }
+
 
         [When(@"the tetromino moves right")]
         public void WhenTheTetrominoMovesRight()
@@ -42,6 +52,13 @@ namespace TetrisTests.StepDefinitions
         {
             _scenarioContext.Get<ITetroid>("tetroid").RotateRight();
         }
+
+        [When(@"it rotates counterclockwise")]
+        public void WhenItRotatesCounterclockwise()
+        {
+            _scenarioContext.Get<ITetroid>("tetroid").RotateLeft();
+        }
+
 
         [Then(@"the shape of the tetromino should look like")]
         public void ThenTheShapeOfTheTetrominoShouldLookLike(string multilineText)

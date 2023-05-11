@@ -62,6 +62,33 @@ namespace TetrisLib
             }
         }
 
+        public void RotateLeft()
+        {
+            int numColumnsInRow = shape.GetLength(0);
+            //transpose
+            for (int i = 0; i < numColumnsInRow; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    int temp = shape[i, j];
+                    shape[i, j] = shape[j, i];
+                    shape[j, i] = temp;
+                }
+            }
+
+            //flip columns.
+            int numRowsinColumns = shape.GetLength(1);
+            for (int j = 0; j < numRowsinColumns/2; j++)
+            {
+                for (int i = 0; i < numColumnsInRow; i++)
+                {
+                    int temp = shape[j, i];
+                    shape[j, i] = shape[numRowsinColumns - 1 - j, i];
+                    shape[numRowsinColumns - 1 - j, i] = temp;
+                }
+            }
+        }
+
         public override string ToString()
         {
             string log = "";
