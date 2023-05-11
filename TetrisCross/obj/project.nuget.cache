@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "65UejEAiiEN5uQyo4rDyKGYDxVT79ZCybIfd/ckXy+xnZUeXCVAeKrJLds54B7/4Nf8jWowR2Xrdz12xO6Zdwg==",
+  "dgSpecHash": "Hq5I7nt+5LA77x7VmnJOqaE1Hr+km1OmIGDtnMgs9rd9pP5GquMg7yrOHYhNyO8n3NwUdJoSkIwWISj5p5gQZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ethan.enger\\code\\PassionProjects\\TetrisCross\\TetrisCross.csproj",
+  "projectFilePath": "C:\\Users\\Ethan\\source\\repos\\PassionProjects\\Tetris\\TetrisCross\\TetrisCross.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ethan.enger\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\ethan.enger\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\Ethan\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\Ethan\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }

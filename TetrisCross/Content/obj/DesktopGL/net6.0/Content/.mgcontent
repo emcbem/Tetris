@@ -4,7 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/ethan.enger/code/PassionProjects/TetrisCross/Content/Test.png</File>
+    <File>C:/Users/Ethan/source/repos/PassionProjects/Tetris/TetrisCross/Content/Test.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

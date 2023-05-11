@@ -8,9 +8,6 @@ namespace TetrisCross
 {
     public class Game1 : Game
     {
-        private List<Sprite> Tetrominos = new List<Sprite>();
-        private Sprite s;
-        private List<Sprite> sprites = new List<Sprite>();
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
@@ -34,9 +31,7 @@ namespace TetrisCross
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            Tetrominos.Add(s = new Sprite(Content.Load<Texture2D>("Test"), 100));
-            sprites.Add(new Sprite(Content.Load<Texture2D>("Test"), 0) { Position = new Vector2(100, 300) });
-            Tetrominos.Add(new Sprite(Content.Load<Texture2D>("Test"), 0) { Position = new Vector2(100, 300) });
+ 
             //Board.LoadContent
         }
 
@@ -47,10 +42,7 @@ namespace TetrisCross
 
             // TODO: Add your update logic here
             //Board.Update()
-            foreach (var sprite in Tetrominos)
-            {
-                sprite.Update(gameTime, sprites);
-            }
+
             base.Update(gameTime);
         }
 
@@ -61,10 +53,7 @@ namespace TetrisCross
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
             //Board.Draw();
-            foreach (var sprite in Tetrominos)
-            {
-                sprite.Draw(_spriteBatch);
-            }
+            
             _spriteBatch.End();
 
             base.Draw(gameTime);

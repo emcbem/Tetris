@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/ethan.enger/code/PassionProjects/TetrisCross/Content/Test.png</SourceFile>
-  <SourceTime>2023-04-12T08:20:49.4348417-06:00</SourceTime>
-  <DestFile>C:/Users/ethan.enger/code/PassionProjects/TetrisCross/Content/bin/DesktopGL/Content/Test.xnb</DestFile>
-  <DestTime>2023-04-12T08:23:26.7882513-06:00</DestTime>
+  <SourceFile>C:/Users/Ethan/source/repos/PassionProjects/Tetris/TetrisCross/Content/Test.png</SourceFile>
+  <SourceTime>2023-04-11T20:04:16.9239102-06:00</SourceTime>
+  <DestFile>C:/Users/Ethan/source/repos/PassionProjects/Tetris/TetrisCross/Content/bin/DesktopGL/Content/Test.xnb</DestFile>
+  <DestTime>2023-04-12T17:32:10.0711395-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T05:44:56-06:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
