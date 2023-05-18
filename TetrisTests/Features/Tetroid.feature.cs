@@ -165,25 +165,25 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("it rotates clockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 21
- testRunner.Then("the shape of the tetromino should look like", "001\r\n011\r\n001", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the shape of the tetromino should look like", "01\r\n11\r\n01", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 27
  testRunner.When("it rotates clockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 28
- testRunner.Then("the shape of the tetromino should look like", "000\r\n010\r\n111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the shape of the tetromino should look like", "010\r\n111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 33
+ testRunner.When("it rotates clockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 34
- testRunner.When("it rotates clockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Then("the shape of the tetromino should look like", "10\r\n11\r\n10", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 35
- testRunner.Then("the shape of the tetromino should look like", "100\r\n110\r\n100", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 40
+ testRunner.When("it rotates clockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 41
- testRunner.When("it rotates clockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 42
- testRunner.Then("the shape of the tetromino should look like", "111\r\n010\r\n000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the shape of the tetromino should look like", "111\r\n010", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -196,7 +196,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A T Tetronimo rotates counterclockwise correctly", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 49
+#line 47
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -216,32 +216,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 50
+#line 48
  testRunner.Given("there is a \'T\' tetromino", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 51
+#line 49
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 52
- testRunner.Then("the shape of the tetromino should look like", "100\r\n110\r\n100", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 50
+ testRunner.Then("the shape of the tetromino should look like", "10\r\n11\r\n10", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 58
+#line 56
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 59
- testRunner.Then("the shape of the tetromino should look like", "000\r\n010\r\n111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 57
+ testRunner.Then("the shape of the tetromino should look like", "010\r\n111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 65
+#line 62
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 66
- testRunner.Then("the shape of the tetromino should look like", "001\r\n011\r\n001", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 63
+ testRunner.Then("the shape of the tetromino should look like", "01\r\n11\r\n01", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 72
+#line 69
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 73
- testRunner.Then("the shape of the tetromino should look like", "111\r\n010\r\n000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 70
+ testRunner.Then("the shape of the tetromino should look like", "111\r\n010", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -254,7 +254,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A I Tetromino rotates counterclockwise correctly", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 80
+#line 76
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -274,32 +274,77 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 81
+#line 77
  testRunner.Given("there is a \'I\' tetromino", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 82
+#line 78
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 79
+ testRunner.Then("the shape of the tetromino should look like", "1111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 83
- testRunner.Then("the shape of the tetromino should look like", "0000\r\n0000\r\n0000\r\n1111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 90
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 84
+ testRunner.Then("the shape of the tetromino should look like", "1\r\n1\r\n1\r\n1", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 91
- testRunner.Then("the shape of the tetromino should look like", "0001\r\n0001\r\n0001\r\n0001", ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 98
  testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 99
- testRunner.Then("the shape of the tetromino should look like", "1111\r\n0000\r\n0000\r\n0000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 92
+ testRunner.Then("the shape of the tetromino should look like", "1111", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+#line 96
+ testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 97
+ testRunner.Then("the shape of the tetromino should look like", "1\r\n1\r\n1\r\n1", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("A tetromino is on the board")]
+        public virtual void ATetrominoIsOnTheBoard()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A tetromino is on the board", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 105
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 106
- testRunner.When("it rotates counterclockwise", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("there is a \'T\' tetromino", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 107
- testRunner.Then("the shape of the tetromino should look like", "1000\r\n1000\r\n1000\r\n1000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("there is a board", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 108
+ testRunner.When("the tetromino gets added to the board", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 109
+ testRunner.Then("the board should look like", "1110000000\r\n0100000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n000000000" +
+                        "0\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n00000" +
+                        "00000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

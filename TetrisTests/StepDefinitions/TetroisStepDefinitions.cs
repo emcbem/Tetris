@@ -66,6 +66,26 @@ namespace TetrisTests.StepDefinitions
             _scenarioContext.Get<ITetroid>("tetroid").ToString().Should().Be(multilineText);
         }
 
+        [Given(@"there is a board")]
+        public void GivenThereIsABoard()
+        {
+            _scenarioContext.Add("board", new Board());
+        }
+
+        [When(@"the tetromino gets added to the board")]
+        public void WhenTheTetrominoGetsAddedToTheBoard()
+        {
+            Board b = _scenarioContext.Get<Board>("board") + _scenarioContext.Get<ITetroid>("tetroid");
+            _scenarioContext.Remove("board");
+            _scenarioContext.Add("board", b);
+        }
+
+        [Then(@"the board should look like")]
+        public void ThenTheBoardShouldLookLike(string multilineText)
+        {
+            _scenarioContext.Get<Board>("board").ToString().Should().Be(multilineText);
+        }
+
 
     }
 }

@@ -14,6 +14,7 @@ namespace TetrisLib
         
         public void RotateLeft();
 
-        public float XPos { get; }
+        public int XPos { get; }
+        public int YPos { get; }
     }
 }

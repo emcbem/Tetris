@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using System.Linq;
 
 namespace TetrisLib
 {
@@ -7,14 +8,13 @@ namespace TetrisLib
     {
         private Vector2 _position;
 
-        private int[,] shape = new int[3, 3]
+        private int[,] shape = new int[2, 3]
         {
             {1,1,1},
-            {0,1,0},
-            {0,0,0}
+            {0,1,0}
         };
-        public float XPos { get => _position.X; }
-
+        public int XPos { get => (int)_position.X; }
+        public int YPos => (int)_position.Y;
         public int[,] Shape => shape;
 
         public void MoveDown()
@@ -38,55 +38,52 @@ namespace TetrisLib
 
         public void RotateRight()
         {
-            int numColumnsInRow = shape.GetLength(0);
-            //transpose
-            for(int i = 0; i < numColumnsInRow; i++)
-            {
-                for(int j = 0; j<i; j++)
-                {
-                    int temp = shape[i,j];
-                    shape[i,j] = shape[j,i];
-                    shape[j,i] = temp;
-                }
-            }
+            DoTranspose();
 
             //flip rows.
-            for(int j = 0; j < shape.GetLength(1); j++)
+            for(int i = 0; i < shape.GetLength(0); i++)
             {
-                for(int i = 0; i < numColumnsInRow/2; i++)
+                for(int j = 0; j < shape.GetLength(1)/ 2; j++)
                 {
-                    int temp = shape[j,i];
-                    shape[j, i] = shape[j, numColumnsInRow - 1 - i];
-                    shape[j, numColumnsInRow - 1 - i] = temp;
+                    int temp = shape[i,j];
+                    shape[i, j] = shape[i, shape.GetLength(1) - j - 1];
+                    shape[i, shape.GetLength(1) - j - 1] = temp;
                 }
             }
         }
 
         public void RotateLeft()
         {
-            int numColumnsInRow = shape.GetLength(0);
-            //transpose
-            for (int i = 0; i < numColumnsInRow; i++)
-            {
-                for (int j = 0; j < i; j++)
-                {
-                    int temp = shape[i, j];
-                    shape[i, j] = shape[j, i];
-                    shape[j, i] = temp;
-                }
-            }
+            DoTranspose();
 
             //flip columns.
-            int numRowsinColumns = shape.GetLength(1);
+            int numRowsinColumns = shape.GetLength(0);
             for (int j = 0; j < numRowsinColumns/2; j++)
             {
-                for (int i = 0; i < numColumnsInRow; i++)
+                for (int i = 0; i < shape.GetLength(1); i++)
                 {
                     int temp = shape[j, i];
                     shape[j, i] = shape[numRowsinColumns - 1 - j, i];
                     shape[numRowsinColumns - 1 - j, i] = temp;
                 }
             }
+        }
+
+        private void DoTranspose()
+        {
+            int yLength = shape.GetLength(0);
+            int xLength = shape.GetLength(1);
+            int[,] rotatedShape = new int[xLength, yLength];
+
+            //transpose
+            for (int i = 0; i < xLength; i++)
+            {
+                for (int j = 0; j < yLength; j++)
+                {
+                    rotatedShape[i, j] = shape[j, i];
+                }
+            }
+            shape = rotatedShape;
         }
 
         public override string ToString()

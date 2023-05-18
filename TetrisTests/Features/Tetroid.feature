@@ -20,30 +20,28 @@ Scenario: A T Tetronimo rotates clockwise correctly
 	When it rotates clockwise
 	Then the shape of the tetromino should look like
 	"""
-	001
-	011
-	001
+	01
+	11
+	01
 	"""
 	When it rotates clockwise
 	Then the shape of the tetromino should look like
 	"""
-	000
 	010
 	111
 	"""
 	When it rotates clockwise
 	Then the shape of the tetromino should look like
 	"""
-	100
-	110
-	100
+	10
+	11
+	10
 	"""
 	When it rotates clockwise
 	Then the shape of the tetromino should look like
 	"""
 	111
 	010
-	000
 	"""
 
 Scenario: A T Tetronimo rotates counterclockwise correctly
@@ -51,30 +49,28 @@ Scenario: A T Tetronimo rotates counterclockwise correctly
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
-	100
-	110
-	100
+	10
+	11
+	10
 	"""
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
-	000
 	010
 	111
 	"""
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
-	001
-	011
-	001
+	01
+	11
+	01
 	"""
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
 	111
 	010
-	000
 	"""
 
 Scenario: A I Tetromino rotates counterclockwise correctly
@@ -82,32 +78,54 @@ Scenario: A I Tetromino rotates counterclockwise correctly
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
-	0000
-	0000
-	0000
 	1111
 	"""
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
-	0001
-	0001
-	0001
-	0001
+	1
+	1
+	1
+	1
 	"""
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
 	1111
-	0000
-	0000
-	0000
 	"""
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
-	1000
-	1000
-	1000
-	1000
+	1
+	1
+	1
+	1
+	"""
+
+Scenario: A tetromino is on the board
+	Given there is a 'T' tetromino
+	Given there is a board
+	When the tetromino gets added to the board
+	Then the board should look like
+	"""
+	1110000000
+	0100000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
 	"""
