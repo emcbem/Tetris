@@ -86,6 +86,30 @@ namespace TetrisTests.StepDefinitions
             _scenarioContext.Get<Board>("board").ToString().Should().Be(multilineText);
         }
 
+        [When(@"we simulate the tetroid in hand spining counterclockwise on the board")]
+        public void WhenWeSimulateTheTetroidInHandSpiningCounterclockwiseOnTheBoard()
+        {
+            removeHeldTetrominoFromBoard();
+            WhenItRotatesCounterclockwise();
+            WhenTheTetrominoGetsAddedToTheBoard();
+        }
+
+        private void removeHeldTetrominoFromBoard()
+        {
+            Board b = _scenarioContext.Get<Board>("board") - _scenarioContext.Get<ITetroid>("tetroid");
+            _scenarioContext.Remove("board");
+            _scenarioContext.Add("board", b);
+        }
+
+        [When(@"we simulate the tetroid falling (.*) space down")]
+        public void WhenWeSimulateTheTetroidFallingSpaceDown(int p0)
+        {
+            removeHeldTetrominoFromBoard();
+            _scenarioContext.Get<ITetroid>("tetroid").MoveDown();
+            WhenTheTetrominoGetsAddedToTheBoard();
+        }
+
+
 
     }
 }

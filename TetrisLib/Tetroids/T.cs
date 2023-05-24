@@ -19,7 +19,7 @@ namespace TetrisLib
 
         public void MoveDown()
         {
-            throw new NotImplementedException();
+            _position.Y++;
         }
 
         public void MoveLeft()

@@ -346,6 +346,22 @@ this.ScenarioInitialize(scenarioInfo);
                         "0\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n00000" +
                         "00000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+#line 132
+ testRunner.When("we simulate the tetroid in hand spining counterclockwise on the board", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 133
+ testRunner.Then("the board should look like", "1000000000\r\n1100000000\r\n1000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n000000000" +
+                        "0\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n00000" +
+                        "00000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 156
+ testRunner.When("we simulate the tetroid falling 1 space down", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 157
+ testRunner.Then("the board should look like", "0000000000\r\n1000000000\r\n1100000000\r\n1000000000\r\n0000000000\r\n0000000000\r\n000000000" +
+                        "0\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n00000" +
+                        "00000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000\r\n0000000000", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
             }
             this.ScenarioCleanup();
         }
