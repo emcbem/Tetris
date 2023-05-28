@@ -1,11 +1,8 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
-
-namespace TetrisLib
+﻿namespace TetrisLib
 {
-    public class o : AbstractTetroid
+    public class O : AbstractTetroid
     {
-        public o() 
+        public O() 
         {
             shape = new int[2, 2]
             {

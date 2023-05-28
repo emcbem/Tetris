@@ -6,6 +6,7 @@ namespace TetrisLib
     {
         int[,] grid = new int[20,10];
 
+        #region Operators
         public static Board operator +(Board board, ITetroid tetroid)
         {
             if(tetroid.Shape.GetLength(0) + tetroid.YPos > board.grid.GetLength(0) || 
@@ -59,6 +60,8 @@ namespace TetrisLib
             }
             return board;
         }
+        #endregion 
+
 
         public override string ToString()
         {
