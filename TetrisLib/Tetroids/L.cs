@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TetrisLib.Tetroids
+namespace TetrisLib
 {
-    internal class L
+    public class L : AbstractTetroid
     {
+        public L() 
+        {
+            shape = new int[3, 2]
+            {
+                {1,0 },
+                {1,0 },
+                {1,1 }
+            };
+        }
     }
 }

@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
 
-namespace TetrisLib.Tetroids
+namespace TetrisLib
 {
-    internal class o
+    public class o : AbstractTetroid
     {
+        public o() 
+        {
+            shape = new int[2, 2]
+            {
+                { 1,1},
+                {1,1 }
+            };
+        }
     }
 }
