@@ -7,7 +7,7 @@ Link to a feature: [Calculator](TetrisTests/Features/Calculator.feature)
 
 @mytag
 Scenario: A tetromino moves
-	Given there is a 'T' tetromino
+	When there is a 'T' tetromino
 	When the tetromino moves right
 	Then the tetrominos x position should be 1
 	When the tetromino moves left
@@ -16,7 +16,7 @@ Scenario: A tetromino moves
 	Then the tetrominos x position should be 0
 
 Scenario: A T Tetronimo rotates clockwise correctly
-	Given there is a 'T' tetromino
+	When there is a 'T' tetromino
 	When it rotates clockwise
 	Then the shape of the tetromino should look like
 	"""
@@ -45,7 +45,7 @@ Scenario: A T Tetronimo rotates clockwise correctly
 	"""
 
 Scenario: A T Tetronimo rotates counterclockwise correctly
-	Given there is a 'T' tetromino
+	When there is a 'T' tetromino
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
@@ -74,7 +74,7 @@ Scenario: A T Tetronimo rotates counterclockwise correctly
 	"""
 
 Scenario: A I Tetromino rotates counterclockwise correctly
-	Given there is a 'I' tetromino
+	When there is a 'I' tetromino
 	When it rotates counterclockwise
 	Then the shape of the tetromino should look like
 	"""
@@ -103,7 +103,7 @@ Scenario: A I Tetromino rotates counterclockwise correctly
 	"""
 
 Scenario: A tetromino is on the board
-	Given there is a 'T' tetromino
+	When there is a 'T' tetromino
 	Given there is a board
 	When the tetromino gets added to the board
 	Then the board should look like
@@ -177,3 +177,18 @@ Scenario: A tetromino is on the board
 	0000000000
 	0000000000
 	"""
+	Scenario: Clearing a line
+	Given there is a board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When the tetromino moves right
+	When the tetromino moves right
+	When the tetromino moves right
+	When the tetromino moves right
+	When the held piece stops where it is on the board
+	When there is a 'O' tetromino
+	When the tetromino moves right 8 times
+	Then the board should recognize there is a line to remove

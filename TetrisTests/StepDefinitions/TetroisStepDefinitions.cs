@@ -13,7 +13,7 @@ namespace TetrisTests.StepDefinitions
             _scenarioContext = scenarioContext;
         }
 
-        [Given(@"there is a '([^']*)' tetromino")]
+        [When(@"there is a '([^']*)' tetromino")]
         public void GivenThereIsATetromino(string shape)
         {
             ITetroid tetroid = null;
@@ -24,6 +24,10 @@ namespace TetrisTests.StepDefinitions
             else if(shape == "I")
             {
                 tetroid = new I();
+            }
+            else if(shape == "O")
+            {
+                tetroid = new O();
             }
             _scenarioContext.Add("tetroid", tetroid);
         }
@@ -109,6 +113,27 @@ namespace TetrisTests.StepDefinitions
             WhenTheTetrominoGetsAddedToTheBoard();
         }
 
+        [When(@"the held piece stops where it is on the board")]
+        public void WhenTheHeldPieceStopsWhereItIsOnTheBoard()
+        {
+            WhenTheTetrominoGetsAddedToTheBoard();
+            _scenarioContext.Remove("tetroid");
+        }
+
+        [When(@"the tetromino moves right (.*) times")]
+        public void WhenTheTetrominoMovesRightTimes(int p0)
+        {
+            for (int i = 0; i < p0; i++)
+            {
+                WhenTheTetrominoMovesRight();
+            }
+        }
+
+        [Then(@"the board should recognize there is a line to remove")]
+        public void ThenTheBoardShouldRecognizeThereIsALineToRemove()
+        {
+            _scenarioContext.Get<Board>("board").FindNthFilledLine(0).Should().NotBe(-1);
+        }
 
 
     }
