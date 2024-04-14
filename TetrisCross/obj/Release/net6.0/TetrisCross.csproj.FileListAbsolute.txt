@@ -26,3 +26,4 @@ C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisCross\obj\Release\net6.
 C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisCross\obj\Release\net6.0\TetrisCross.pdb
 C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisCross\obj\Release\net6.0\TetrisCross.genruntimeconfig.cache
 C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisCross\obj\Release\net6.0\ref\TetrisCross.dll
+C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisCross\obj\Release\net6.0\TetrisCross.sourcelink.json

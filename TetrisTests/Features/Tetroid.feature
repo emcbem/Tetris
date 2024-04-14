@@ -184,11 +184,134 @@ Scenario: A tetromino is on the board
 	When the held piece stops where it is on the board
 	When there is a 'I' tetromino
 	When it rotates counterclockwise
-	When the tetromino moves right
-	When the tetromino moves right
-	When the tetromino moves right
-	When the tetromino moves right
+	When the tetromino moves right 4 times
 	When the held piece stops where it is on the board
 	When there is a 'O' tetromino
 	When the tetromino moves right 8 times
+	When the held piece stops where it is on the board
+	Then the board should look like
+	"""
+	1111111111
+	0000000011
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	"""
 	Then the board should recognize there is a line to remove
+	When the found line is removed
+	Then the board should recognize there is no line to remove
+
+	Scenario: Clearing multiple lines
+
+	Given there is a board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When we simulate the tetroid falling 19 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When we simulate the tetroid falling 18 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When we simulate the tetroid falling 17 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When we simulate the tetroid falling 16 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When the tetromino moves right 4 times
+	When we simulate the tetroid falling 19 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When the tetromino moves right 4 times
+	When we simulate the tetroid falling 18 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When the tetromino moves right 4 times
+	When we simulate the tetroid falling 17 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When it rotates counterclockwise
+	When the tetromino moves right 4 times
+	When we simulate the tetroid falling 16 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When the tetromino moves right 8 times
+	When we simulate the tetroid falling 16 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When the tetromino moves right 9 times
+	When we simulate the tetroid falling 16 space down
+	When the held piece stops where it is on the board
+	When there is a 'I' tetromino
+	When the held piece stops where it is on the board
+	Then the board should recognize there is a line to remove
+	Then the board should look like
+	"""
+	1000000000
+	1000000000
+	1000000000
+	1000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	1111111111
+	1111111111
+	1111111111
+	1111111111
+	"""
+	When the found lines are removed
+	Then the board should look like
+	"""
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	1000000000
+	1000000000
+	1000000000
+	1000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	0000000000
+	"""
+
+	

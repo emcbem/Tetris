@@ -22,3 +22,4 @@ C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib
 C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\refint\TetrisLib.dll
 C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\TetrisLib.pdb
 C:\Users\ethan.enger\code\PassionProjects\TetrisLib\obj\Release\net6.0\ref\TetrisLib.dll
+C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisLib\obj\Release\net6.0\TetrisLib.sourcelink.json

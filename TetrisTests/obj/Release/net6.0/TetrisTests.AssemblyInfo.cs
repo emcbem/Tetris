@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TetrisTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2b278bd09b0b2f84c278258815a4d3c827391b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TetrisTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TetrisTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

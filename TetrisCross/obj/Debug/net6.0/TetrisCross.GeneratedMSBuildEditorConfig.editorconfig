@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TetrisCross
-build_property.ProjectDir = C:\Users\ethan.enger\code\PassionProjects\TetrisCross\
+build_property.ProjectDir = C:\Users\Ethan\source\repos\PassionProjects\Tetris\TetrisCross\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
