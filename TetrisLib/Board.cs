@@ -6,15 +6,18 @@ namespace TetrisLib
 {
 	public class Board
 	{
-		int[,] grid = new int[20, 10];
+		public int[,] grid = new int[20, 10];
+
+		public static event Action<int> PieceHitWall;
 
 		#region Operators
 		public static Board operator +(Board board, ITetroid tetroid)
 		{
-			if (tetroid.Shape.GetLength(0) + tetroid.YPos > board.grid.GetLength(0) ||
+			if (tetroid.Shape.GetLength(0) + tetroid.YPos >= board.grid.GetLength(0) ||
 				tetroid.Shape.GetLength(1) + tetroid.XPos > board.grid.GetLength(1))
 			{
-				throw new TetrominoOutOfBoundsException();
+				PieceHitWall?.Invoke(1);
+				//throw new TetrominoOutOfBoundsException();
 			}
 			for (int i = 0; i < tetroid.Shape.GetLength(0); i++)
 			{
@@ -22,7 +25,9 @@ namespace TetrisLib
 				{
 					if ((board.grid[i + tetroid.YPos, j + tetroid.XPos] + tetroid.Shape[i, j]) > 1)
 					{
-						throw new TetrominoIntersectionException();
+						tetroid.MoveBack();
+						PieceHitWall?.Invoke(1);
+						//throw new TetrominoIntersectionException();
 					}
 				}
 			}

@@ -1,11 +1,14 @@
-﻿using System.Numerics;
+﻿using System.Linq;
+using System.Numerics;
 
 namespace TetrisLib
 {
     public class AbstractTetroid : ITetroid
     {
         private Vector2 _position;
+        private
         protected int[,] shape;
+        private RevertMovement revertMove;
         public int[,] Shape => shape;
 
         public int XPos => (int)_position.X;
@@ -14,6 +17,7 @@ namespace TetrisLib
         public void MoveDown()
         {
             _position.Y++;
+            revertMove = () => _position.Y--;
         }
 
         public void MoveLeft()
@@ -21,12 +25,23 @@ namespace TetrisLib
             if (_position.X != 0)
             {
                 _position.X--;
+                revertMove = MoveRight;
             }
         }
 
         public void MoveRight()
         {
-            _position.X++;
+            if( _position.X + shape.GetLength(1) < 10) 
+            {
+                _position.X++;
+                revertMove = MoveLeft;
+            }
+
+        }
+
+        public void MoveBack()
+        {
+            revertMove.Invoke();
         }
 
 
@@ -94,4 +109,6 @@ namespace TetrisLib
             return log.PadRight(1);
         }
     }
+
+    internal delegate void RevertMovement();
 }

@@ -16,7 +16,7 @@ namespace TetrisTests.StepDefinitions
 		[When(@"there is a '([^']*)' tetromino")]
 		public void GivenThereIsATetromino(string shape)
 		{
-			ITetroid tetroid = null;
+			ITetroid? tetroid = default(ITetroid);
 			if (shape == "T")
 			{
 				tetroid = new T();

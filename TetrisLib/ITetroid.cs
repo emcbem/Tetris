@@ -9,6 +9,7 @@ namespace TetrisLib
         public void MoveRight();
         public void MoveLeft();
         public void MoveDown() ;
+        public void MoveBack();
 
         public void RotateRight();
         
